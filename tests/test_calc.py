@@ -1,15 +1,15 @@
 import unittest
 
-from core.app import *
+from calculator import calc
 
 
 class MyTestCase(unittest.TestCase):
 
     def test_sumtwointegers(self):
-        self.assertEqual(sumtwointegers(1, 1), 2)
+        self.assertEquals(calc.sumtwointegers(1, 1), 2)
 
     def test_multiplytwointegers(self):
-        self.assertEquals(multiplytwointegers(2, 2), 4)
+        self.assertEquals(calc.multiplytwointegers(2, 2), 4)
 
 
 if __name__ == '__main__':
