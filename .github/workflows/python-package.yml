@@ -3,11 +3,8 @@
 
 name: Python package
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+# Triggered on any push to directory
+on: push
 
 jobs:
   build:
